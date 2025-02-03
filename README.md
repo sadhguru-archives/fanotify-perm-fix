@@ -35,7 +35,7 @@ A robust, protocol-agnostic daemon written in Rust that automatically fixes file
 
 3. Install the binary:
    ```bash
-   sudo cp target/release/fanotify_perm_fix /usr/local/bin/fanotify_perm_fix
+   sudo cp target/release/fanotify-perm-fix /usr/local/bin/fanotify-perm-fix
    ```
 
 ## ⚙️ Configuration
@@ -72,7 +72,7 @@ log_level = "info"
 Run the daemon with root privileges:
 
 ```bash
-sudo /usr/local/bin/fanotify_perm_fix
+sudo /usr/local/bin/fanotify-perm-fix
 ```
 
 ### Running as a Systemd Service
@@ -86,7 +86,7 @@ sudo /usr/local/bin/fanotify_perm_fix
 
    [Service]
    Type=simple
-   ExecStart=/usr/local/bin/fanotify_perm_fix
+   ExecStart=/usr/local/bin/fanotify-perm-fix
    Restart=on-failure
    User=root
 
